@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>貯金シミュレーション</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>貯金シミュレーション</h1>
+
+<label>今の貯金</label>
+<input type="number" id="money">
+
+<label>目標金額</label>
+<input type="number" id="goal">
+
+<label>月収</label>
+<input type="number" id="income">
+
+<label>月の支出</label>
+<input type="number" id="expense">
+
+<label>年間ボーナス</label>
+<input type="number" id="bonus">
+
+<button onclick="calc()">計算する</button>
+
+<h2>結果</h2>
+<div id="result">まだ計算してない</div>
+
+<h2>履歴</h2>
+<div id="history"></div>
+
+<h2>グラフ</h2>
+<canvas id="chart"></canvas>
+
+<progress id="bar" max="100" value="0"></progress>
+
+<script src="script.js"></script>
+
+</body>
+</html>
